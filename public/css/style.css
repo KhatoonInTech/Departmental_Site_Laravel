@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'Pixelated';
+    src: url('assets/small_pixel-7.ttf') format('truetype');
+}
+
+.pixelated-font {
+    font-family: 'Pixelated', monospace;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #f4f3ed;
+    background-image: linear-gradient(to right,
+            rgba(139, 152, 139, 0.9),
+            rgba(82, 149, 250, 0.9));
+}
+
+.fh5co-hero {
+    background-color: #555;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    /* Changed to viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fh5co-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: .5;
+    transition: opacity .3s ease;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    /* Ensure text appears above overlay */
+    width: 100%;
+}
+
+.fh5co-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.fh5co-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fh5co-intro h3 {
+    color: rgb(248, 247, 245);
+    margin-bottom: 20px;
+    /* Space between headings */
+}
+
+/* Specific styles for the highlighted department name */
+.fh5co-intro h3:nth-child(2) {
+    color: rgb(255, 213, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    /* Adjust font size as needed */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .fh5co-intro h3 {
+        font-size: 20px;
+        /* Smaller font size for mobile */
+    }
+}
+
+.section {
+    padding: 60px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center
+}
+
+.parallax {
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.parallax .overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.developer-theme {
+    background-color: #282828;
+    border: 1px solid #444;
+    box-shadow: 0 4px 8px rgba(15, 13, 13, 0.3);
+    background-image: linear-gradient(to bottom, #37FD12, #b13598);
+}
+
+.text-warning {
+    color: #ffff00 !important;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+.text-danger {
+    color: #ff6600 !important;
+    text-shadow: 0 0 10px rgba(255, 0, 102, 0.5);
+}
+
+.text-highlight {
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    margin: 1.5rem 0;
+    background: linear-gradient(to left, #4cf703, #03caac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.text-title1 {
+    font-family: 'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    margin: 1.5rem 0;
+    background: linear-gradient(to right, #600247, #025312);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.text-title2 {
+    font-family: 'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    margin: 1.5rem 0;
+    background: linear-gradient(to left, #600247, #022879);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-info {
+    font-family: 'Arial Narrow Bold', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dropdown-item {
+    color: #f4f3ed;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(to right,
+            rgba(35, 178, 35, 0.2),
+            /* Reduced opacity green */
+            rgba(253, 76, 11, 0.2));
+    /* Reduced opacity orange */
+    color: #00ffff;
+}
+
+.text-title {
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    margin: 1.5rem 0;
+    background: linear-gradient(to left, #600247, #022879);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+
+.admin-card {
+    background: linear-gradient(to right,
+            rgba(78, 32, 3, 1.9),
+            rgba(3, 39, 78, 1.9));
+    color: #f4f3ed;
+    border: 1px solid #444;
+    box-shadow: 0 4px 8px rgba(15, 13, 13, 0.3);
+    transition: all 0.3s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(15, 13, 13, 0.5);
+}
+
+.admin-card p {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.admin-card h3 {
+    line-height: 0.5;
+    /* Adjust line height for the designation */
+    margin-bottom: 0.5;
+    /* Remove space below the designation */
+}
+
+.admin-card h2 {
+    line-height: 1;
+    /* Adjust line height for the name */
+    margin-top: 0.5;
+    /* Remove space above the name */
+}
+
+.admin-cards {
+    background: linear-gradient(to left, rgb(100, 208, 57, 1), rgba(35, 178, 164, 1));
+    border: 1px solid #444;
+    box-shadow: 0 4px 8px rgba(15, 13, 13, 0.3);
+    transition: all 0.3s ease;
+}
+
+.admin-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(15, 13, 13, 0.5);
+}
+
+.btn-custom {
+    background-color: #c22311;
+    border-color: #e74c3c;
+    color: #f4f3ed;
+}
+
+.btn-custom:hover {
+    background-color: #ae1c0c;
+    border-color: #c0392b;
+    color: #f4f3ed;
+}
+
+.logout-btn {
+    padding: 8px 20px;
+    font-weight: bold;
+    color: #1e1e1e;
+    background-color: rgb(189, 130, 1);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(125, 251, 255, 0.8);
+}
+
+.logout-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(220, 185, 8, 0.3);
+}
+
+.modal-content {
+    background: linear-gradient(rgba(82, 1, 47, 0.95),
+            rgba(3, 39, 78, 0.95));
+    border: 2px solid #00ff9d;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.5);
+    color: #f4f3ed;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.modal-header {
+    border-bottom: 2px solid rgba(0, 255, 157, 0.3);
+    padding: 1.5rem;
+}
+
+.modal-header .modal-title {
+    color: #00ff9d;
+    font-family: 'Helvetica Neue';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 255, 157, 0.5);
+}
+
+.modal-header .btn-close {
+    color: #00ff9d;
+    text-shadow: none;
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.modal-body h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #7fffd4, #f4ab6a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.modal-body h2 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+    background: linear-gradient(to right, #ff00ff, #00ff9d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.modal-body p {
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.modal-body p strong {
+    color: #00ff9d;
+}
+
+.text-warning {
+    color: #ffff00 !important;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+.text-danger {
+    color: #ff6600 !important;
+    text-shadow: 0 0 10px rgba(255, 0, 102, 0.5);
+}
+
+.text-highlight {
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    margin: 1.5rem 0;
+    background: linear-gradient(to left, #4cf703, #03caac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.modal-footer {
+    border-top: 2px solid rgba(0, 255, 157, 0.3);
+    padding: 1.5rem;
+    font-family: 'Helvetica Neue';
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-info {
+    font-family: 'Arial Narrow Bold', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .logout-btn {
+        padding: 6px 12px;
+        font-size: 1.9rem;
+    }
+
+    .modal-body h3 {
+        font-size: 0.7rem;
+    }
+
+    .modal-body h2 {
+        font-size: 0.9rem;
+    }
+
+    .modal-body p {
+        font-size: 0.7rem;
+    }
+
+    .btn-custom {
+        padding: 0.6rem 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+    background-image: linear-gradient(to right, rgba(109, 103, 44, 0.9), rgba(130, 135, 139, 0.9));
+    /* Gradient background */
+    border-radius: 8px;
+    /* Rounded corners for the table */
+    overflow: hidden;
+    /* Ensures rounded corners are visible */
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+    text-align: left;
+    /* Align text to the left */
+    color: #f4f3ed;
+    /* Light text color for better contrast against the background */
+}
+
+.table thead th {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white for header */
+    color: #1a4631;
+    /* Darker text color for header */
+    font-weight: bold;
+    /* Bold header text */
+}
+
+.table tbody tr {
+    background-color: rgba(98, 90, 23, 0.9);
+    /* Gradient background */
+
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Light grey background on hover */
+}
+
+.table img {
+    border-radius: 50%;
+    /* Make profile pictures circular */
+    width: 50px;
+    /* Set width for profile pictures */
+    height: 50px;
+    /* Set height for profile pictures */
+}
+
+.table a {
+    color: #007bff;
+    /* Bootstrap primary color for links */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.table a:hover {
+    text-decoration: underline;
+    /* Underline links on hover */
+}
+
+.dropdown-item {
+    cursor: pointer;
+    /* Change cursor to pointer for dropdown items */
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    margin-bottom: 4%;
+}
+
+.credentials-label {
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 200px;
+}
+
+#passwordLabel {
+    display: block;
+    width: 100%;
+    padding-left:15px ;
+    padding-top: 5px;
+    border: 2px solid #99da52;
+    border-radius: 4px;
+    box-sizing: border-box;
+    user-select: none;
+    background: rgba(67, 155, 196, 0.5);
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}

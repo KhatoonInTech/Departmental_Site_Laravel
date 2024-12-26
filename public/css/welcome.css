@@ -1,0 +1,401 @@
+.text-warning {
+    color: #ffff00 !important;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+.text-danger {
+    color: #ff6600 !important;
+    text-shadow: 0 0 10px rgba(255, 0, 102, 0.5);
+}
+.text-highlight {
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    margin: 1.5rem 0;
+    background: linear-gradient(to left, #4cf703, #03caac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-info {
+    font-family: 'Arial Narrow Bold', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.modal-content {
+    background: linear-gradient(rgba(82, 1, 47, 0.95),
+            rgba(3, 39, 78, 0.95));
+    border: 2px solid #00ff9d;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.5);
+    color: #f4f3ed;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 20px;
+}
+
+.modal-header {
+    border-bottom: 2px solid rgba(0, 255, 157, 0.3);
+    padding: 1.5rem;
+}
+
+.modal-header .modal-title {
+    color: #00ff9d;
+    font-family: 'Helvetica Neue';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 255, 157, 0.5);
+}
+
+.modal-header .btn-close {
+    color: #00ff9d;
+    text-shadow: none;
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.modal-body h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #7fffd4, #f4ab6a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.modal-body h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    background: linear-gradient(to right, #ff00ff, #00ff9d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.modal-body p {
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+    padding-bottom: 0.5rem;
+    
+}
+
+.modal-body p strong {
+    color: #00ff9d;
+}
+
+
+.modal .btn-custom {
+    padding: 8px 20px;
+    font-weight: bold;
+    color: #1e1e1e;
+    background-color: rgb(189, 130, 1);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(125, 251, 255, 0.8);
+    border: none;
+    margin-top: 10px;
+   
+}
+.modal .btn-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(220, 185, 8, 0.3);
+}
+
+.modal .btn-outline-secondary {
+   
+    color: #1e1e1e;
+    border-color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+    .modal .btn-custom {
+        padding: 6px 12px;
+        font-size: 1.9rem;
+    }
+}
+.fh5co-hero {
+    background-color: #555;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    /* Changed to viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fh5co-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: .5;
+    transition: opacity .3s ease;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    /* Ensure text appears above overlay */
+    width: 100%;
+}
+
+.fh5co-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.fh5co-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fh5co-intro h3 {
+    color: rgb(248, 247, 245);
+    margin-bottom: 20px;
+    /* Space between headings */
+}
+
+/* Specific styles for the highlighted department name */
+.fh5co-intro h3:nth-child(2) {
+    color: rgb(255, 213, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    /* Adjust font size as needed */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .fh5co-intro h3 {
+        font-size: 20px;
+        /* Smaller font size for mobile */
+    }
+}
+
+.section {
+    padding: 60px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center
+}
+
+.parallax {
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.parallax .overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.chairman-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.chairman-message img {
+    max-width: 450px;
+    /* Increased size */
+    max-height: 200px;
+
+    border-radius: 10px;
+    /* Optional styling */
+}
+
+.chairman-info {
+    text-align: right;
+    /* Align text to the left */
+    margin-top: 10px;
+    /* Space between image and text */
+}
+
+.dsa-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.dsa-message img {
+    max-width: 400px;
+    /* Adjusted size */
+    max-height: 200px;
+    border-radius: 10px;
+    /* Optional styling */
+}
+
+.dsa-info {
+    text-align: left;
+    /* Align text to the right */
+    margin-top: 10px;
+    /* Space between image and text */
+}
+
+
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* SERVICE SECTION
+ ==================== */
+#mu-service {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -80px;
+}
+
+#mu-service .mu-service-area {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    /* You can adjust this value to control the maximum width */
+    width: 80%;
+    /* This makes the area take up 80% of the container width */
+    margin: 0 auto;
+}
+
+#mu-service .mu-service-area .mu-service-single {
+    background-color: #0a88b6;
+    color: #fff;
+    padding: 35px 25px;
+    text-align: center;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+}
+
+#mu-service .mu-service-area .mu-service-single:nth-child(2) {
+    background-color: #0c8837;
+}
+
+#mu-service .mu-service-area .mu-service-single:nth-child(3) {
+    background-color: #ab860c;
+}
+
+#mu-service .mu-service-area .mu-service-single span {
+    font-size: 30px;
+}
+
+#mu-service .mu-service-area .mu-service-single h3 {
+    font-size: 25px;
+}
+
+#mu-service .mu-service-area .mu-service-single p {
+    font-weight: lighter;
+}
+
+/*==================
+ABOUT US COUNTER SECTION
+====================*/
+#mu-abtus-counter {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 1%, rgb(9, 121, 121) 46%, rgb(6, 133, 168) 80%, rgb(1, 108, 150) 100%, rgba(2, 0, 36, 1) 1%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline;
+    float: left;
+    padding: 5px 0;
+    /* Reduced from 40px to 20px */
+    width: 100%;
+}
+
+#mu-abtus-counter .mu-abtus-counter-area {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+#mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single {
+    border-right: 2px solid #888;
+    display: initial;
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 0px 0;
+    /* Reduced from 15px to 10px */
+}
+
+#mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single span {
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    /* Reduced from 40px to 30px */
+}
+
+#mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single h4 {
+    color: #fff;
+    font-size: 28px;
+    /* Reduced from 35px to 28px */
+    font-weight: bold;
+    margin-bottom: 0px;
+    /* Reduced from 5px to 2px */
+    margin-top: 0px;
+    /* Reduced from 10px to 5px */
+}
+
+#mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single p {
+    color: #fff;
+    font-size: 14px;
+    /* Reduced from 16px to 14px */
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#mu-abtus-counter .mu-abtus-counter-area .no-border {
+    border: none;
+}
+.text-title1 {
+    font-family: 'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    margin: 1.5rem 0;
+    background: linear-gradient(to right, #600247, #025312);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.text-title2 {
+    font-family: 'Franklin Gothic Medium', Haettenschweiler, 'Arial Narrow Bold', Arial, sans-serif;
+    margin: 1.5rem 0;
+    background: linear-gradient(to left, #600247, #022879);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
