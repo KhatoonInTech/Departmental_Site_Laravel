@@ -89,8 +89,8 @@ app/
 │       │   ├── FacultyResultController.php
 │       │   └── Student/
 │       │       ├── ResultController.php
-│       │       ├── Controller.php
-│       │       └── FacultyMembers.php
+│       │── Controller.php
+│       │── FacultyMembers.php
 │       └── Models/
 │           ├── Admin.php
 │           ├── Community.php
@@ -430,7 +430,7 @@ This project is licensed under the [MIT License](LICENSE).
 <div align="center">
 <h3>For any query/help ,please contact our developer:</h3>  
 Developer : <a href="https://www.linkedin.com/in/Khatoonintech/" target="_blank">Ayesha Noreen</a><br>
-	<small> ByteWise Certified ML/DL Engineer|GSoC Contributor | SWEfellow: Confiniti. ,HeadStarterAI </small>
+   <small> ByteWise Certified ML/DL Engineer|GSoC Contributor | SWEfellow: Confiniti. ,HeadStarterAI </small>
 <br> <a href="https://www.github.com/Khatoonintech/" target="_blank"> Don't forget to ⭐ our repo </a><br>
 
 
